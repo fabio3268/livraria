@@ -3,8 +3,6 @@
 // Faça o mesmo para receber as informçõe de u livro
 // $doctor = filter_var_array($_POST, FILTER_DEFAULT);
 
-
-
 // O código abaixo verifica se as informações do formulário foram todas digidatas
 // senão a mensagem de erro é retornada, faça o mesmo para o livro
 //if(in_array("",$doctor)){
