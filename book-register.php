@@ -21,7 +21,6 @@ $genres = getGenres($conn);
     </div>
     <button>Salvar</button>
     <div id="message">
-
     </div>
 </form>
 <script type="text/javascript" async>
