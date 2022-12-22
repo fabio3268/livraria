@@ -7,10 +7,12 @@ function getGenres ($conn){
     return $stmt->fetchAll();
 }
 
-// A função abaixo busca na tabela doctors os médicos de uma determinada
-// especialidade
-// Faça o mesmo buscando na tabela books os livros de um determinado genêro
-// a função deve se chamar getBooksByGenre
+function getDepartments($conn){
+    $query = "SELECT * 
+              FROM departments";
+    $stmt = $conn->query($query);
+    return $stmt->fetchAll();
+}
 
  function getBookByGenres ($conn, int $genres){
      $query = "SELECT *
