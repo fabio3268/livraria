@@ -10,14 +10,14 @@ function getGenres ($conn){
 // A função abaixo busca na tabela doctors os médicos de uma determinada
 // especialidade
 // Faça o mesmo buscando na tabela books os livros de um determinado genêro
-// a função deve se chamar getDoctorsBySpecialty
+// a função deve se chamar getBooksByGenre
 
-// function getDoctorsBySpecialty ($conn, int $specialtyId){
-//     $query = "SELECT *
-//              FROM doctors
-//              JOIN specialties ON doctors.specialty_id = specialties.id
-//              WHERE specialty_id = {$specialtyId}";
-//    $stmt = $conn->query($query);
-//    return $stmt->fetchAll();
-// }
+ function getBookByGenres ($conn, int $genres){
+     $query = "SELECT *
+              FROM books
+              JOIN genres ON books.genre_id = genres.id
+              WHERE genres.id = {$genres}";
+    $stmt = $conn->query($query);
+    return $stmt->fetchAll();
+ }
 

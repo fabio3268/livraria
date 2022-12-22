@@ -4,8 +4,7 @@ include __DIR__ . "/source/connection.php";
 
 
 $query = "SELECT * 
-          FROM books
-          JOIN genres ON books.genre_id = genres.id";
+          FROM books";
 
 $stmt = $conn->query($query);
 

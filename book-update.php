@@ -27,7 +27,13 @@ if(!empty($_GET["idBook"])){
         <select name="genre">
             <?php
             foreach ($genres as $genre){
-                echo "<option value='{$genre->id}'>{$genre->description}</option>";
+                if($genre->id != $book->genre_id) {
+                    echo "<option value='{$genre->id}'>{$genre->description}</option>";
+                } 
+                else {
+                    echo "<option selected value='{$genre->id}'>{$genre->description}</option>";
+                } 
+                
             }
             ?>
         </select>
