@@ -3,6 +3,9 @@ include __DIR__ . "/source/connection.php";
 include __DIR__ . "/source/helpers.php";
 $genres = getGenres($conn);
 ?>
+
+
+
 <form id="book-register">
     <div>
         Titulo do Livro: <input name="title" type="text">
@@ -23,6 +26,9 @@ $genres = getGenres($conn);
     <div id="message">
     </div>
 </form>
+
+
+
 <script type="text/javascript" async>
     const form = document.querySelector("#book-register");
     const message = document.querySelector("#message");
